@@ -1,0 +1,152 @@
+.swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .swiper-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Allslider{    
+
+    @media (max-width:991px) {
+      height: 450px !important;
+    }
+
+    @media (max-width:768px) {
+      height: 300px !important;
+    }
+  }
+
+  .banner_info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    // width: 50%;
+    text-align: left;
+
+    .title1{
+      font-size: 24px;
+      color: black;
+      font-weight: 600;
+      text-align:left;
+    }
+
+    .title2{
+      font-size: 40px;
+      color: rgb(34, 34, 34);
+      font-weight: 700;
+      text-align:left;
+    }
+
+    .title3{
+      font-size: 58px;
+      line-height: 64px;
+      color: var(--primary-color);
+      font-weight: 900;
+      text-align:left;
+      width: 60%;
+    }
+
+    .title4{
+      font-size: 18px;
+      line-height: 36px;
+      margin: 7px 0 22px;
+      display: inline-block;
+      text-align: left;
+      color: #4f5d77;
+      text-align:left;
+      width: 70%;
+    }
+
+    .shop_now{
+      background-color: var(--primary-color);
+      padding: 8px 32px;
+      cursor: pointer;
+      color: #fff;
+      border-radius: 50px;
+      transition: .3s;
+
+      &:hover{
+        background-color: #2d2d2d;
+      }
+    }
+
+    @media (max-width:768px) {
+
+      &{
+        position: absolute;
+
+      }
+
+      .title1{
+        font-size: 15px;
+      }
+
+      .title2{
+        font-size: 22px;
+        line-height: 28px;
+      }
+
+      .title3{
+        font-size: 30px;
+        line-height: 35px;
+      }
+
+      .title4{
+        font-size: 14px;
+        line-height: 18px;
+        width: 55%;
+      }
+
+      .shop_now{
+        padding: 4px 12px;
+        font-size: 12px;
+      }
+    }
+
+  }
+
+  .swiper-container{
+    .right_image{
+      display: flex;
+      align-items: center;
+
+      img{
+        object-fit: contain;
+        height: auto;
+        width: auto;
+      }
+    }
+  }

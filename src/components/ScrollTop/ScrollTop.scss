@@ -1,0 +1,38 @@
+.scroll_top_button{
+    height: 40px;
+    width: 30px;
+    background-color: var(--primary-color);
+    position: fixed;
+    bottom: -10px;
+    right: 10px;
+    z-index: 9999;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s;
+
+    &:hover{
+        background: #000;
+    }
+
+    scroll-behavior: smooth !important;
+
+    svg{
+        fill: white;
+
+    }
+}
+
+.scroll_top_button.active{
+    bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+}
+
+html.smooth{
+    scroll-behavior: smooth !important;
+}

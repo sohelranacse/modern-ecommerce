@@ -1,0 +1,105 @@
+.contact_page{
+
+    .shop_info{
+        margin-top: 20px;
+        border-bottom: 1px solid rgba(208, 206, 206, 0.623);
+        padding-bottom: 20px;
+
+        h3{
+            font-size: 18px;
+            color: gray;
+        }
+
+        p{
+            font-size: 14px;
+            margin: 0;
+            color: #4f5d77;
+        }
+
+        .contact_info{
+            margin-top: 5px;
+            p{
+                span{
+                    border-bottom: 1px dotted #4f5d77;
+                    color: #4f5d77;
+                }
+            }
+        }
+
+        .view_map_button{
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            font-size: 13px;
+            border-radius: 5px;
+            padding: 7px 20px;
+            display: inline-block;
+            cursor: pointer;
+            margin-top: 20px;
+
+            svg{
+                fill: gray;
+                margin-right: 5px;
+            }
+        }
+
+    }
+
+    .contact_form{
+        margin: 30px 0;
+
+        .form_title{
+            text-align: center;
+        }
+
+        form{
+            margin: auto;
+            max-width: 500px;
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+
+            input{
+                margin: 10px 0;
+                border: 1px solid #2f2f2f1c !important;
+                border-radius: 3px;
+                padding: 8px 18px;
+                font-size: 16px;
+                color: #353535;
+                outline: none;
+
+                &:focus{
+                    border:1px solid #2f2f2f59 !important;
+                }
+            }
+
+            textarea{
+                margin: 10px 0;
+                max-height: 200px;
+                min-height: 200px;
+                border: 1px solid #2f2f2f1c !important;
+                border-radius: 5px;
+                padding: 8px 18px;
+                font-size: 16px;
+                color: #353535;
+                outline: none;
+
+                &:focus{
+                    border:1px solid #2f2f2f59 !important;
+                }
+            }
+
+            input[type='submit']{
+                color: white;
+                outline: none;
+                border-color: none;
+                background-color: #45a1ff;
+                display: inline-block;
+                width: 170px;
+                border-radius: 50px;
+                margin: auto;
+                margin-top: 20px;
+            }
+        }
+    }
+
+}

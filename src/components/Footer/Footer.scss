@@ -1,0 +1,130 @@
+footer{
+    border-top: 1px solid #e8e8e8;
+    padding: 50px 0;
+
+    .footer1{
+        .logo img{
+            width: 150px;
+        }
+
+        .contact{
+            margin: 20px 0;
+            .title{
+                font-size: 20px;
+                font-weight: 600;
+                color: gray;
+                margin-bottom: 10px;
+            }
+
+            &>div{
+
+                p{
+                    margin-bottom: 5px;
+
+                    span{
+                        font-size: 16px;
+                        font-weight: 500;
+                    }
+
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .follow_us{
+
+            .title{
+                font-size: 20px;
+                font-weight: 600;
+                color: gray;
+                margin-bottom: 10px;
+            }
+
+            .social_icons{
+                display: flex;
+                align-items: center;
+
+                .icon{
+                    height: 35px;
+                    width: 35px;
+                    line-height: 30px;
+                    border-radius: 5px;
+                    background-color: black;
+                    color: white;
+                    text-align: center;
+                    margin-right: 10px;
+
+                    svg{
+                        fill: white;
+                    }
+                    
+                    &:nth-child(1){
+                        background-color: #3B5999;
+                    }
+                    
+                    &:nth-child(2){
+                        background-color: #55ACF9;
+                    }
+                    
+                    &:nth-child(3){
+                        background-color: #E1306C;
+                    }
+                    
+                    &:nth-child(4){
+                        background-color: #CB2027;
+                    }
+                
+                }
+
+            }
+        }
+
+    }
+
+    .footer2{
+        margin-top: 20px;
+
+        .title{
+            font-size: 20px;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        ul{
+            padding: 0;
+
+            li{
+                text-align: left;
+                font-size: 15px;
+                display: block;
+                margin: 0 0 13px;
+                transition: .3s;
+                cursor: pointer;
+
+                &:hover{
+                    color: var(--primary-color);
+                    padding-left: 5px;
+
+                    @media (max-width:768px) {
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer4{
+        margin-top: 20px;
+
+        .title{
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+
+        p{
+            font-size: 16px;
+            color: #4f5d77;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.error_section{
+    padding: 50px 0;
+
+    .error_img{
+        max-width: 300px;
+
+        img{
+            width:100%;
+            transition: .4s;
+        }
+
+        &:hover img{
+            transform: translateY(-20px);
+        }
+    }
+
+    h3{
+        font-weight: 700;
+        text-align: center;
+        margin-top: 20px;
+        color: #2b2b2b;
+    }
+
+    p{
+        color: gray;
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    a{
+        background: var(--primary-color);
+        border-radius: 5px;
+        padding: 10px 40px;
+        display: inline-block;
+        color: white;
+        font-weight: 500;
+    }
+
+}

@@ -1,0 +1,120 @@
+.category_section{
+    padding: 80px 0;
+
+    @media (max-width:768px) {
+        padding: 0;
+    }
+
+    .title{
+        font-size: 2rem;
+        text-align: center;
+        margin: 20px 0;
+        font-weight: 600;
+
+        @media (max-width:768px) {
+            font-size: 1rem;
+        }
+
+    }
+
+    .category{
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        cursor: pointer;
+        position: relative;
+        // padding: 10px;
+        border-radius: 5px;
+
+        &:hover{
+            .background_image{
+                height: 110%;
+                width: 110%;
+                background-position: -15px !important;
+            }
+        }
+
+        .background_image{
+            height: 100%;
+            width: 100%;
+            transition: .5s;
+            background-size: cover !important;
+            padding: 10px;
+        }
+
+        &::after{
+            content: "";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: .4s;
+            border-radius: 5px;
+            z-index: 1;
+        }
+
+        &:hover::after{
+            background-color: #00000040;
+            z-index: 11;
+        }
+
+        &:hover .info{
+            bottom: 10px;
+        }
+
+        col-6{
+            background-color: lightgray;
+        }
+
+        img{
+            z-index: 1;
+            width: 100%;
+        }
+
+        .info{
+            position: absolute;
+            bottom: -20px;
+            transition: .3s;
+            z-index: 9;
+
+            p{
+                font-size: 20px;
+                font-weight: 500;
+                color: rgb(255, 255, 255);
+                margin: 0;
+                margin-bottom: 5px;
+                z-index: 99;
+            }
+    
+            span{
+                font-size: 16px;
+                color: rgb(184, 184, 184);
+            }
+        }
+
+    }
+
+    @media (max-width:768px) {
+        .row{
+            height: 500px;
+
+            .category{
+                .info{
+                    p{
+                        font-size: 14px;
+                        margin: 0;
+                    }
+
+                    span{
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+}

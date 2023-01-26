@@ -1,0 +1,108 @@
+.shop_page{
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    .shop_title{
+        margin: 0 0 20px 0;
+        color: var(--primary-color);
+    }
+
+    .show_filter_mobile{
+        display: none;
+
+        @media (max-width:768px) {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            width: 80px;
+            margin-left: auto;
+
+            p{
+                margin: 0;
+                display: inline-block;
+                color: var(--primary-color);
+                cursor: pointer;
+            }
+
+            svg{
+                fill: var(--primary-color);
+                cursor: pointer;
+            }
+        }
+        
+    }
+
+    .product_filter.active{
+
+        @media (max-width:768px) {
+            height: 100%;
+            padding: 10px;
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+
+    .product_filter{
+        position: sticky;
+        top: 70px;
+    
+        @media (max-width:768px) {
+            padding: 10px;
+            height: 0;
+            visibility: hidden;
+            opacity: 0;
+            transition: .4s ease-in-out;
+            position: static;
+        }
+
+        .filter_by_price{
+            margin-bottom: 20px;
+
+            .filter_title{
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+
+            .price_range_label{
+                font-size: 16px;
+
+                span{
+                    font-weight: 500;
+                }
+            }
+
+        }
+
+        .filter_by_category{
+            
+            .filter_title{
+                font-size: 20px;
+                font-weight: 500;
+                margin-bottom: 20px;
+            }
+
+            ul{
+                margin: 0;
+                padding: 0;
+
+                li{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 1rem;
+                    
+                    p{
+                        margin: 0;
+                        color: #2a7cff;
+                        font-weight: 400;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}

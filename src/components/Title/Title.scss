@@ -1,0 +1,24 @@
+.title_component{
+    margin-bottom: 20px;
+    .title_2{
+        border-bottom: 1px solid rgb(225, 223, 223);
+
+        h3{
+            color: #262626;
+            display: inline-block;
+            margin:0;
+            padding: 10px 0;
+            position: relative;
+
+            &:after{
+                content:'';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background-color: var(--primary-color);
+                height: 2px;
+                width: 70%;
+            }
+        }
+    }
+}
